@@ -13,6 +13,9 @@
     .header-logo{
         width: 165px;
     }
+    .OurValue .OurValue-box .OurValue-box-right .vm-box {
+        padding: 10px 25px !important;
+    }
 }
 
 @media(max-width:1199px) {
@@ -27,9 +30,10 @@
             }
         }
     }
-}
+
 .OurValue .OurValue-box .OurValue-box-right .vm-box {
-    padding: 15px 25px !important;
+    padding: 10px 25px !important;
+}
 }
 
 @media(max-width:991px) {
@@ -40,7 +44,7 @@
         width: 165px;
     }
     .banner .banner-content {
-        width: 100%;
+        width: 100% !important;
     }
     .WeAre{
         .WeAre-Box{
@@ -69,7 +73,7 @@
         width: 165px;
     }
     .banner .banner-content {
-        width: 100%;
+        width: 100% !important;
     }
     .WeAre{
         .WeAre-Box{
