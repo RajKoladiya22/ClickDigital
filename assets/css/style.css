@@ -360,7 +360,8 @@ header .offcanvas-body nav ul .wp-btn button:hover {
   border-radius: 10px;
   border: 1px solid #241A30;
   position: relative;
-  overflow: hidden;
+  align-items: flex-end;
+  display: flex;
 }
 .OurValue .OurValue-box .OurValue-box-left::before {
   content: "";
@@ -374,7 +375,7 @@ header .offcanvas-body nav ul .wp-btn button:hover {
 .OurValue .OurValue-box .OurValue-box-left .section-header {
   position: relative;
   z-index: 1;
-  padding: 200px 20px 20px 20px;
+  padding: 0 20px 20px 20px;
 }
 .OurValue .OurValue-box .OurValue-box-left .section-header h2 {
   padding: 20px 0;
@@ -412,9 +413,21 @@ header .offcanvas-body nav ul .wp-btn button:hover {
 .OurValue .OurValue-box .OurValue-box-right .vm-box {
   border-radius: 10px;
   padding: 32px;
+  margin-left: 35px;
+}
+.OurValue .OurValue-box .OurValue-box-right .vm-box span {
+  font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+}
+.OurValue .OurValue-box .OurValue-box-right .vm-box h2 {
+  font-size: calc(18px + 7 * (100vw - 320px) / 1600);
+  padding: 20px 0;
+}
+.OurValue .OurValue-box .OurValue-box-right .vm-box p {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
 }
 .OurValue .OurValue-box .OurValue-box-right .vision-box {
   background-color: #FF7FC2;
+  margin-bottom: 10px;
 }
 .OurValue .OurValue-box .OurValue-box-right .mission-box {
   background-color: #B47CFD;

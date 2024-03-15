@@ -398,7 +398,9 @@ header {
             border-radius: 10px;
             border: 1px solid $border-color;
             position: relative;
-            overflow: hidden;
+            // overflow: scroll;
+            align-items: flex-end;
+            display: flex;
 
             &::before {
                 content: '';
@@ -412,7 +414,7 @@ header {
             .section-header {
                 position: relative;
                 z-index: 1; 
-                padding:  200px 20px 20px 20px; 
+                padding:  0 20px 20px 20px; 
                 h2 {
                     padding: 20px 0;
                 }
@@ -437,9 +439,21 @@ header {
             .vm-box{
                 border-radius: 10px;
                 padding: 32px;
+                margin-left: 35px;
+                span{
+                    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+                }
+                h2{
+                    font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
+                    padding: 20px 0;
+                }
+                p{
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                }
             }
             .vision-box{
                 background-color: $primary-color;
+                margin-bottom: 10px;
             }
             .mission-box{
                 background-color: $purple-color;

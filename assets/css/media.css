@@ -1,22 +1,41 @@
 @media(min-width:1400px) {
- 
+    .xxl-wrap{
+        flex-wrap: wrap !important;
+    }
     
 }
 
 @media(max-width:1399px){
+    .lg-flex-wrap{
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
     .header-logo{
         width: 165px;
     }
 }
 
 @media(max-width:1199px) {
-  
+
 .header-logo{
     width: 165px;
 }
+.WeAre{
+        .WeAre-Box{
+            .section-header{
+                padding: 25px 16px 25px 50px !important;
+            }
+        }
+    }
+}
+.OurValue .OurValue-box .OurValue-box-right .vm-box {
+    padding: 15px 25px !important;
 }
 
 @media(max-width:991px) {
+    .md-no-wrap{
+        flex-wrap: nowrap !important;
+    }
     .header-logo{
         width: 165px;
     }
@@ -26,14 +45,26 @@
     .WeAre{
         .WeAre-Box{
             .section-header{
-                padding: 50px 16px 50px 20px ;
+                padding: 50px 0 50px 0 !important;
             }
+        }
+    }
+    .OurValue-box-right{
+        padding-top: 20px !important;
+        .vm-box{
+            margin: 0px !important ;
+        }
+        .vision-box{
+            margin-right: 5px !important;
+            box-sizing: border-box;
         }
     }
 }
 
 @media(max-width:767px) {
-   
+    .sm-wrap{
+        flex-wrap: wrap !important;
+    }
     .header-logo{
         width: 165px;
     }
@@ -43,8 +74,18 @@
     .WeAre{
         .WeAre-Box{
             .section-header{
-                padding: 50px 16px 50px 20px ;
+                padding: 50px 0 50px 0 !important;
             }
+        }
+    }
+    .OurValue-box-right{
+        padding-top: 20px !important;
+        .vm-box{
+            margin-left: 0 !important ;
+            margin-top: 10px !important;
+        }
+        .vision-box{
+            margin: 0 !important;
         }
     }
 }
@@ -110,8 +151,19 @@
     .WeAre{
         .WeAre-Box{
             .section-header{
-                padding: 50px 16px 50px 20px ;
+                padding: 50px 0 50px 0 !important;
             }
+        }
+    }
+    .OurValue-box-right{
+        padding-top: 20px !important;
+        
+        .vm-box{
+            margin-left: 0 !important ;
+            margin-top: 10px !important;
+        }
+        .vision-box{
+            margin: 0 !important;
         }
     }
    
