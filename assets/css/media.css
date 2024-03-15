@@ -136,7 +136,7 @@
         width: 165px;
     }
     .banner .banner-content {
-        width: 100%;
+        width: 100% !important;
     }
     .banner-btn {
         width: 100%;
