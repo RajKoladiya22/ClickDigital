@@ -1,0 +1,421 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+}
+
+body {
+  background-color: #0a0118;
+  color: #ffffff;
+  font-family: "Outfit";
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.pinck-active {
+  color: #FF7FC2 !important;
+}
+
+.bg {
+  background-color: #0a0118;
+}
+
+.py-110 {
+  padding: 110px 0;
+}
+
+.section-header span {
+  color: #FF7FC2;
+  font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+  font-weight: 600;
+}
+.section-header h2 {
+  font-size: calc(24px + 15 * (100vw - 320px) / 1600);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: rgba(10, 1, 24, 0.8666666667);
+  z-index: 9999999;
+}
+header .row {
+  border-bottom: 1px solid rgba(155, 150, 176, 0.2784313725);
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+}
+header .header-logo {
+  padding: 15px;
+}
+header nav ul li {
+  padding: 0 20px;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-size: calc(14px + 4 * (100vw - 320px) / 1600);
+  font-weight: 600;
+  transition: 0.6s;
+}
+header nav ul li :hover {
+  color: #FF7FC2;
+}
+header .whatsapp button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding: 0px 15px !important;
+}
+header .whatsapp button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+header .whatsapp button i {
+  font-size: 25px;
+}
+header .offcanvas-body nav ul li {
+  padding: 12px;
+}
+header .offcanvas-body nav ul .wp-btn button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding: 0px 15px !important;
+}
+header .offcanvas-body nav ul .wp-btn button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+
+.banner {
+  position: relative;
+}
+.banner .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 123%;
+  overflow: hidden;
+  z-index: -1;
+}
+.banner .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .banner-content {
+  position: relative;
+  z-index: 1;
+  padding-top: calc(90px + 60 * (100vw - 320px) / 1600);
+  width: 60%;
+}
+.banner .banner-content span {
+  font-size: calc(10px + 4 * (100vw - 320px) / 1600);
+  font-weight: 600;
+  border: 1px solid #FF7FC2;
+  border-radius: 30px;
+  padding: 3px 14px 3px 14px;
+}
+.banner .banner-content h1 {
+  font-size: calc(30px + 31 * (100vw - 320px) / 1600);
+  font-weight: 700;
+  padding: 20px 0;
+}
+.banner .banner-content p {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  color: #9B96B0;
+}
+.banner .banner-content .banner-btn {
+  padding-top: 15px;
+}
+.banner .banner-content .banner-btn button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 15px 5px 0 5px;
+}
+.banner .banner-content .banner-btn button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+.banner .banner-content .banner-btn span {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  margin: 0 5px;
+  padding-top: calc(7px + 8 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 8 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.banner .banner-content .banner-btn span:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+.banner::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 123%;
+  background: radial-gradient(at top center, rgba(10, 1, 24, 0.53) 10%, #0A0118 85%);
+}
+
+.BranDesign .BranDesign-box {
+  position: relative;
+  z-index: 99;
+  border: 1px solid #241A30;
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #2B2338 0%, #0A0118 100%);
+}
+.BranDesign .BranDesign-box:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg__img3.png");
+  /* Adjust the path to your image */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* Change to cover if you want the image to cover the entire box */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  /* Adjust the opacity if needed */
+  z-index: -1;
+  /* Ensure the background image stays behind the content */
+}
+.BranDesign .section-header h2 {
+  padding: 60px 0;
+}
+.BranDesign .BrandLogo {
+  padding-bottom: 50px;
+}
+.BranDesign .BrandLogo .BrandLogo-img {
+  width: calc(150px + 173 * (100vw - 320px) / 1600);
+  height: calc(30px + 19 * (100vw - 320px) / 1600);
+  margin: 25px 0;
+}
+.BranDesign .BrandLogo .BrandLogo-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.WeAre .WeAre-Box .WeAre-Box-img {
+  border: 1px solid #241A30;
+  padding: 16px;
+  border-radius: 10px;
+}
+.WeAre .WeAre-Box .WeAre-Box-img img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  opacity: 0.5;
+  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+  transition-duration: 1s;
+  border-radius: 10px 10px 10px 10px;
+}
+.WeAre .WeAre-Box .WeAre-Box-img img:hover {
+  opacity: 0.9;
+  filter: none;
+}
+.WeAre .WeAre-Box .section-header {
+  padding: 50px 16px 50px 80px;
+}
+.WeAre .WeAre-Box .section-header h2 {
+  padding: 20px 0;
+}
+.WeAre .WeAre-Box .section-header p {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  color: #9B96B0;
+  padding-bottom: 20px;
+}
+.WeAre .WeAre-Box .section-header button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  font-weight: 500;
+}
+.WeAre .WeAre-Box .section-header button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+
+.OurValue {
+  background-image: url("../img//bg_pattern.png");
+  position: relative;
+}
+.OurValue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10, 1, 24, 0.6) 0%, #0A0316 100%);
+}
+.OurValue .OurValue-box {
+  position: relative;
+}
+.OurValue .OurValue-box .OurValue-box-left {
+  height: 540px;
+  background-image: url("/assets/img/computer-screens-with-data.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid #241A30;
+  position: relative;
+  overflow: hidden;
+}
+.OurValue .OurValue-box .OurValue-box-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10, 1, 24, 0.6) 0%, #0A0316 100%);
+}
+.OurValue .OurValue-box .OurValue-box-left .section-header {
+  position: relative;
+  z-index: 1;
+  padding: 200px 20px 20px 20px;
+}
+.OurValue .OurValue-box .OurValue-box-left .section-header h2 {
+  padding: 20px 0;
+}
+.OurValue .OurValue-box .OurValue-box-left .section-header p {
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  color: #9B96B0;
+  padding-bottom: 20px;
+}
+.OurValue .OurValue-box .OurValue-box-left .section-header button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  font-weight: 500;
+}
+.OurValue .OurValue-box .OurValue-box-left .section-header button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+.OurValue .OurValue-box .OurValue-box-right .vm-box {
+  border-radius: 10px;
+  padding: 32px;
+}
+.OurValue .OurValue-box .OurValue-box-right .vision-box {
+  background-color: #FF7FC2;
+}
+.OurValue .OurValue-box .OurValue-box-right .mission-box {
+  background-color: #B47CFD;
+}/*# sourceMappingURL=style.css.map */

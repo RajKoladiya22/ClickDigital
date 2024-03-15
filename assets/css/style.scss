@@ -1,0 +1,453 @@
+$Outfit: 'Outfit';
+// $primary-color: #dd2a1b;
+$primary-color: #FF7FC2;
+$secondary-color: #9B96B0;
+$white-color: #ffffff;
+$border-color: #241A30;
+$bg-color: #0a0118;
+$purple-color: #B47CFD;
+$orange-color: #FFB07B;
+$btn-gradiant: linear-gradient(90deg, #ff7272 0%, #ff4f4f 100%);
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-25: 25px;
+$fs-39: 39px;
+$fs-48: 48px;
+$fs-61: 61px;
+
+
+@mixin btn {
+    background-color: transparent;
+    background-image: linear-gradient(120deg, $purple-color 20%, $primary-color 60%);
+    box-shadow: -25px 0px 20px -10px #FFB07B inset;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: $purple-color;
+    border-radius: 30px 30px 30px 30px;
+    letter-spacing: 2.5px;
+    //padding: 0px 15px;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+
+    padding-top: calc(7px + (8 - 7) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(7px + (8 - 7) * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@mixin btn-hover {
+    &:hover {
+        color: $white-color;
+        background-color: transparent;
+        background-image: linear-gradient(120deg, $primary-color 0%, $purple-color 100%);
+        box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+        border-style: solid;
+        border-width: 0px 0px 0px 0px;
+        border-color: $primary-color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+}
+
+body {
+    background-color: $bg-color;
+    color: $white-color;
+    font-family: $Outfit;
+}
+
+.white {
+    background-color: $white-color;
+}
+
+.pinck-active {
+    color: $primary-color !important;
+}
+
+.bg {
+    background-color: $bg-color;
+}
+
+.py-110 {
+    padding: 110px 0;
+}
+
+.section-header {
+    span {
+        color: $primary-color;
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: calc(24px + (39 - 24) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+// --- Header-start --- 
+header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #0a0118dd;
+    // backdrop-filter: blur(10px);
+    z-index: 9999999;
+
+    .row {
+        border-bottom: 1px solid #9b96b047;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 4%;
+    }
+
+    .header-logo {
+        padding: 15px;
+    }
+
+    nav {
+        ul {
+            li {
+                padding: 0 20px;
+
+                a {
+                    color: $white-color;
+                    text-decoration: none;
+                    font-size: $fs-18;
+                    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+                    font-weight: 600;
+                    transition: 0.6s;
+                }
+
+                :hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .whatsapp {
+        button {
+            @include btn;
+            padding: 0px 15px !important;
+
+            @include btn-hover();
+
+            i {
+                font-size: $fs-25;
+            }
+        }
+    }
+
+    .offcanvas-body {
+        nav {
+            ul {
+                li {
+                    padding: 12px;
+                }
+
+                .wp-btn {
+                    button {
+                        @include btn;
+                        padding: 0px 15px !important;
+                        @include btn-hover();
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// --- Header-end --- 
+
+// --- Banner-Section-start --- 
+.banner {
+    position: relative;
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 123%;
+        overflow: hidden;
+        z-index: -1;
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .banner-content {
+        position: relative;
+        z-index: 1;
+        // padding-top: 150px;
+        padding-top: calc(90px + (150 - 90) * ((100vw - 320px) / (1920 - 320)));
+        ;
+        width: 60%;
+
+        span {
+            font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 600;
+            border: 1px solid $primary-color;
+            border-radius: 30px;
+            padding: 3px 14px 3px 14px;
+        }
+
+        h1 {
+            font-size: calc(30px + (61 - 30) * ((100vw - 320px) / (1920 - 320)));
+            font-weight: 700;
+            padding: 20px 0;
+        }
+
+        p {
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            color: $secondary-color;
+        }
+
+        .banner-btn {
+            padding-top: 15px;
+            // font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1920 - 320)));
+
+            button {
+                @include btn;
+                // padding: 15px 30px;
+                letter-spacing: 2px;
+                font-weight: 600;
+                margin: 15px 5px 0 5px;
+
+
+                @include btn-hover();
+            }
+
+            span {
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                margin: 0 5px;
+                padding-top: calc(7px + (15 - 7) * ((100vw - 320px) / (1920 - 320)));
+                padding-bottom: calc(7px + (15 - 7) * ((100vw - 320px) / (1920 - 320)));
+                padding-right: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+                padding-left: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+                letter-spacing: 2px;
+                margin-top: 15px;
+
+                @include btn-hover();
+            }
+        }
+    }
+
+    &::before {
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 123%;
+        background: radial-gradient(at top center, rgba(10, 1, 24, 0.53) 10%, #0A0118 85%);
+    }
+}
+
+// --- Banner-Section-end --- 
+
+// --- Brand-Design-Section-start --- 
+.BranDesign {
+    .BranDesign-box {
+        position: relative;
+        z-index: 99;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #2B2338 0%, #0A0118 100%);
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url('../img/bg__img3.png');
+            /* Adjust the path to your image */
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* Change to cover if you want the image to cover the entire box */
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            /* Adjust the opacity if needed */
+            z-index: -1;
+            /* Ensure the background image stays behind the content */
+        }
+    }
+
+    .section-header {
+        h2 {
+            padding: 60px 0;
+        }
+    }
+
+    .BrandLogo {
+        padding-bottom: 50px;
+
+        .BrandLogo-img {
+            width: calc(150px + (323 - 150) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(30px + (49 - 30) * ((100vw - 320px) / (1920 - 320)));
+            margin: 25px 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// --- Brand-Design-Section-end --- 
+
+// --- We-Are-start ---
+.WeAre {
+    .WeAre-Box {
+        .WeAre-Box-img {
+            border: 1px solid $border-color;
+            padding: 16px;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 450px;
+                object-fit: contain;
+                object-position: center center;
+                opacity: 0.5;
+                filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+                transition-duration: 1s;
+                border-radius: 10px 10px 10px 10px;
+
+                &:hover {
+                    opacity: 0.9;
+                    filter: none;
+                }
+            }
+        }
+
+        .section-header {
+            padding: 50px 16px 50px 80px;
+
+            h2 {
+                padding: 20px 0;
+            }
+
+            p {
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                color: $secondary-color;
+                padding-bottom: 20px
+            }
+
+            button {
+                @include btn();
+                font-weight: 500;
+                // padding: 15px 30px;
+
+                @include btn-hover();
+            }
+        }
+    }
+}
+
+// --- We-Are-end ---
+
+// ---our-value-start---
+.OurValue {
+    background-image: url('../img//bg_pattern.png');
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0A011899 0%, #0A0316 100%);
+    }
+    .OurValue-box {
+        position: relative;
+
+        .OurValue-box-left {
+            height: 540px;
+            background-image: url('/assets/img/computer-screens-with-data.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            border: 1px solid $border-color;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, #0A011899 0%, #0A0316 100%);
+            }
+            .section-header {
+                position: relative;
+                z-index: 1; 
+                padding:  200px 20px 20px 20px; 
+                h2 {
+                    padding: 20px 0;
+                }
+    
+                p {
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                    color: $secondary-color;
+                    padding-bottom: 20px
+                }
+    
+                button {
+                    @include btn();
+                    font-weight: 500;
+                    // padding: 15px 30px;
+    
+                    @include btn-hover();
+                }
+            }
+        }
+
+        .OurValue-box-right{
+            .vm-box{
+                border-radius: 10px;
+                padding: 32px;
+            }
+            .vision-box{
+                background-color: $primary-color;
+            }
+            .mission-box{
+                background-color: $purple-color;
+            }
+        }
+        
+    }
+}
+
+
+// ---our-value-end---
