@@ -11,6 +11,7 @@ p {
 ul {
   list-style: none;
   margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
@@ -431,4 +432,104 @@ header .offcanvas-body nav ul .wp-btn button:hover {
 }
 .OurValue .OurValue-box .OurValue-box-right .mission-box {
   background-color: #B47CFD;
+}
+
+.number-count {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  padding: 30px 0;
+}
+.number-count .counter ul li {
+  padding: 10px 0;
+}
+.number-count .counter ul li h3 {
+  font-size: calc(30px + 18 * (100vw - 320px) / 1600);
+  font-weight: 600;
+}
+.number-count .counter ul li span {
+  font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+  font-weight: 400;
+}
+
+.WhatWeOffer .offer-content .offer-box {
+  border: 1px solid #241A30;
+  border-radius: 20px;
+  padding: 14px;
+  transition: 0.5s;
+  margin: 10px 0;
+}
+.WhatWeOffer .offer-content .offer-box .box {
+  border: 1px solid #241A30;
+  border-radius: 10px;
+  padding: 28px 32px 28px 32px;
+  --background-overlay: "";
+  background-color: transparent;
+  background-image: linear-gradient(215deg, rgba(43, 35, 56, 0.5019607843) 0%, #2B2338 65%);
+  overflow: hidden;
+  position: relative;
+}
+.WhatWeOffer .offer-content .offer-box .box:before {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg_pattern.png");
+  background-position: 13% 15%;
+  background-size: 60px 60px;
+  z-index: -1;
+}
+.WhatWeOffer .offer-content .offer-box .box span,
+.WhatWeOffer .offer-content .offer-box .box i {
+  font-size: calc(14px + 36 * (100vw - 320px) / 1600);
+  color: #FF7FC2;
+}
+.WhatWeOffer .offer-content .offer-box .box h3 {
+  padding: 21px 0 14px 0;
+  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+}
+.WhatWeOffer .offer-content .offer-box .box p {
+  padding-bottom: 32px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+}
+.WhatWeOffer .offer-content .offer-box .box button {
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #B47CFD 20%, #FF7FC2 60%);
+  box-shadow: -25px 0px 20px -10px #FFB07B inset;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #B47CFD;
+  border-radius: 30px 30px 30px 30px;
+  letter-spacing: 2.5px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding-top: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 1 * (100vw - 320px) / 1600);
+  padding-right: calc(15px + 15 * (100vw - 320px) / 1600);
+  padding-left: calc(15px + 15 * (100vw - 320px) / 1600);
+  font-size: calc(11px + 2 * (100vw - 320px) / 1600) !important;
+}
+.WhatWeOffer .offer-content .offer-box .box button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #FF7FC2 0%, #B47CFD 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #FF7FC2;
+}
+.WhatWeOffer .offer-content .offer-box:hover {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  --border-block-start-width: 1px;
+  --border-inline-end-width: 1px;
+  --border-block-end-width: 1px;
+  --border-inline-start-width: 1px;
+  border-color: #B47CFD;
+  --border-color: $purple-color;
+  box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.11);
+}
+.WhatWeOffer .offer-content .bx-m {
+  margin: 10px 25px 10px 25px;
 }/*# sourceMappingURL=style.css.map */

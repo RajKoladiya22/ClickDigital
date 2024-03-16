@@ -62,6 +62,7 @@ p {
 ul {
     list-style: none;
     margin: 0 !important;
+    padding: 0 !important;
 }
 
 body {
@@ -377,6 +378,7 @@ header {
 .OurValue {
     background-image: url('../img//bg_pattern.png');
     position: relative;
+
     &::before {
         content: '';
         position: absolute;
@@ -386,6 +388,7 @@ header {
         height: 100%;
         background: linear-gradient(135deg, #0A011899 0%, #0A0316 100%);
     }
+
     .OurValue-box {
         position: relative;
 
@@ -411,57 +414,169 @@ header {
                 height: 100%;
                 background: linear-gradient(135deg, #0A011899 0%, #0A0316 100%);
             }
+
             .section-header {
                 position: relative;
-                z-index: 1; 
-                padding:  0 20px 20px 20px; 
+                z-index: 1;
+                padding: 0 20px 20px 20px;
+
                 h2 {
                     padding: 20px 0;
                 }
-    
+
                 p {
                     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
                     color: $secondary-color;
                     padding-bottom: 20px
                 }
-    
+
                 button {
                     @include btn();
                     font-weight: 500;
                     // padding: 15px 30px;
-    
+
                     @include btn-hover();
                 }
             }
         }
 
-        .OurValue-box-right{
-            .vm-box{
+        .OurValue-box-right {
+            .vm-box {
                 border-radius: 10px;
                 padding: 32px;
                 margin-left: 35px;
-                span{
+
+                span {
                     font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
                 }
-                h2{
+
+                h2 {
                     font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
                     padding: 20px 0;
                 }
-                p{
+
+                p {
                     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
                 }
             }
-            .vision-box{
+
+            .vision-box {
                 background-color: $primary-color;
                 margin-bottom: 10px;
             }
-            .mission-box{
+
+            .mission-box {
                 background-color: $purple-color;
             }
         }
-        
+
     }
 }
 
-
 // ---our-value-end---
+
+// --- Number-count-start---
+.number-count {
+    background-color: transparent;
+    background-image: linear-gradient(120deg, $purple-color 20%, $primary-color 60%);
+    padding: 30px 0;
+
+    .counter {
+        ul {
+            li {
+                padding: 10px 0;
+
+                // border-right: 1px solid #d693ec;
+                h3 {
+                    font-size: calc(30px + (48 - 30) * ((100vw - 320px) / (1920 - 320)));
+                    font-weight: 600;
+                }
+
+                span {
+                    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// --- Number-count-end---
+
+// ---What-We-Offer-start---
+.WhatWeOffer {
+    .offer-content {
+        .offer-box {
+            border: 1px solid $border-color;
+            border-radius: 20px;
+            padding: 14px;
+            transition: 0.5s;
+            margin: 10px 0;
+
+            .box {
+                border: 1px solid $border-color;
+                border-radius: 10px;
+                padding: 28px 32px 28px 32px;
+                --background-overlay: '';
+                background-color: transparent;
+                background-image: linear-gradient(215deg, #2B233880 0%, #2B2338 65%);
+                overflow: hidden;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    box-sizing: border-box;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('../img/bg_pattern.png');
+                    background-position: 13% 15%;
+                    background-size: 60px 60px;
+                    z-index: -1;
+                }
+
+                span,
+                i {
+                    font-size: calc(14px + (50 - 14) * ((100vw - 320px) / (1920 - 320)));
+                    color: $primary-color;
+                }
+
+                h3 {
+                    padding: 21px 0 14px 0;
+                    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+                }
+
+                p {
+                    padding-bottom: 32px;
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                }
+
+                button {
+                    @include btn();
+                    font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1920 - 320))) !important;
+
+                    @include btn-hover();
+                }
+            }
+            &:hover{
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                --border-block-start-width: 1px;
+                --border-inline-end-width: 1px;
+                --border-block-end-width: 1px;
+                --border-inline-start-width: 1px;
+                border-color: $purple-color;
+                --border-color: $purple-color;
+                box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.11);
+            }
+        }
+        
+        .bx-m {
+            margin: 10px 25px 10px 25px;
+        }
+    }
+}
+
+// ---What-We-Offer-end---

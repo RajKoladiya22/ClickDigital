@@ -16,10 +16,14 @@
     .OurValue .OurValue-box .OurValue-box-right .vm-box {
         padding: 10px 25px !important;
     }
+    
 }
 
 @media(max-width:1199px) {
-
+.xl-no-wrap{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
 .header-logo{
     width: 165px;
 }
@@ -34,6 +38,7 @@
 .OurValue .OurValue-box .OurValue-box-right .vm-box {
     padding: 10px 25px !important;
 }
+
 }
 
 @media(max-width:991px) {
@@ -92,44 +97,45 @@
             margin: 0 !important;
         }
     }
+    
 }
 
 @media (max-width:575px) {
     .col-xs-1{
-        width: 8.33%;
+        width: 8.33% !important;
     }
     .col-xs-2{
-        width: 16.66%;
+        width: 16.66% !important;
     }
     .col-xs-3{
-        width: 25%;
+        width: 25% !important;
     }
     .col-xs-4{
-        width: 33.33%;
+        width: 33.33% !important;
     }
     .col-xs-5{
-        width: 41.66%;
+        width: 41.66% !important;
     }
     .col-xs-6{
-        width: 50%;
+        width: 50% !important;
     }
     .col-xs-7{
         width: 58.33%;
     }
     .col-xs-8{
-        width: 66.66%;
+        width: 66.66% !important;
     }
     .col-xs-9{
-        width: 75%;
+        width: 75% !important;
     }
     .col-xs-10{
-        width: 83.33%;
+        width: 83.33% !important;
     }
     .col-xs-11{
-        width: 91.66%;
+        width: 91.66% !important;
     }
     .col-xs-12{
-        width: 100%;
+        width: 100% !important;
     }
     /* ------------------- */
     .d-xs-none{
@@ -170,5 +176,5 @@
             margin: 0 !important;
         }
     }
-   
+    
 }
