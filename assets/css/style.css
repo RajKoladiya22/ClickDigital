@@ -456,7 +456,7 @@ header .offcanvas-body nav ul .wp-btn button:hover {
   border-radius: 20px;
   padding: 14px;
   transition: 0.5s;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 .WhatWeOffer .offer-content .offer-box .box {
   border: 1px solid #241A30;
