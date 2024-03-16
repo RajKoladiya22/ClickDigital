@@ -69,6 +69,23 @@ body {
     background-color: $bg-color;
     color: $white-color;
     font-family: $Outfit;
+
+    &::-webkit-scrollbar {
+        width: 10px; /* width of the scrollbar */
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: $bg-color; /* color of the track */
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $secondary-color; /* color of the thumb */
+        border-radius: 5px; /* roundness of the thumb */
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; /* color of the thumb on hover */
+    }
 }
 
 .white {

@@ -19,6 +19,19 @@ body {
   color: #ffffff;
   font-family: "Outfit";
 }
+body::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #0a0118; /* color of the track */
+}
+body::-webkit-scrollbar-thumb {
+  background: #9B96B0; /* color of the thumb */
+  border-radius: 5px; /* roundness of the thumb */
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the thumb on hover */
+}
 
 .white {
   background-color: #ffffff;
