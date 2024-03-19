@@ -765,98 +765,77 @@ header {
 }
 
 // ---Experiance-end---
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
+.testimonials{
+    
 .testimonial{
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #14213d;
-    color: #14213d;
-
+    // background-color: #3d5a80;
+    color: #3d5a80;
+    .section-header{
+        h2{
+            color: $white-color;
+        }
+    }
     &-slide{
-        padding:20px;
+        padding:40px 20px;
     }
     &_box{   
 
         &-top{
-            background-color: #e5e5e5;
+            background-color: #2B2338;
             padding: 30px;
             border-radius: 15px;
             display: flex;
-            position: relative;
-            box-shadow: 5px 5px 20px rgba(229, 229, 229, 0.301);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            border: 1px solid $secondary-color;
+            // box-shadow: 5px 5px 20px #2B2338;
         }
         &-icon{
-            margin-top: -12px;
-            padding-right: 20px;
+            padding: 10px 0;
             i{
                 font-size: 25px;
-                color: #14213d;
+                color: $secondary-color;
             }
         }
         &-text{
+            padding: 10px 0;
             p{
-                color: #707070;
+                color: $white-color;
                 font-size: 14px;
                 line-height: 20px;
                 margin-bottom: 0;
             }
         }
-        &-shape{
-            position: absolute;
-            bottom: -10px;
-            left: 50px;
-            width: 20px;
-            height: 20px;
-            background-color: #e5e5e5;
-            -webkit-transform: rotateZ(50deg);
-            transform: rotateZ(45deg);
-        }
-
-        &-bottom{
-            padding-top: 35px;
-            padding-left: 25px;
-        }
-        &-profile{
-            display: flex;
-        }
         &-img{
+            padding: 20px 0 10px;
             display: flex;
             justify-content: center;
             img{
                 width: 70px;
                 height: 70px;
                 border-radius: 50px;
-                border: 2px solid #e5e5e5;
+                border: 2px solid $border-color;
             }
         }
-        &-info{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 20px;
-        }
         &-name{
+            padding-top: 10px;
             h4{
                 font-size: 20px;
                 line-height: 25px;
-                color: #e5e5e5;
+                color: $secondary-color;
                 margin-bottom: 0;
             }
         }
         &-job{
             p{
-                color: #e5e5e5;
+                color: $primary-color;
                 font-size: 14px;
                 text-transform: uppercase;
                 letter-spacing: 3px;
@@ -867,7 +846,4 @@ header {
         }
     }
 }
-  .slick-dots li button:before{
-    font-size: 15px;
-    color: #e5e5e5;
-  }
+}

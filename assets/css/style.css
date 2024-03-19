@@ -681,96 +681,72 @@ header .offcanvas-body nav ul .wp-btn button:hover {
   background-image: radial-gradient(at top left, rgba(15, 5, 32, 0.5019607843) 0%, rgba(24, 2, 58, 0.7058823529) 55%);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.testimonial {
+.testimonials .testimonial {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #14213d;
-  color: #14213d;
+  color: #3d5a80;
 }
-.testimonial-slide {
-  padding: 20px;
+.testimonials .testimonial .section-header h2 {
+  color: #ffffff;
 }
-.testimonial_box-top {
-  background-color: #e5e5e5;
+.testimonials .testimonial-slide {
+  padding: 40px 20px;
+}
+.testimonials .testimonial_box-top {
+  background-color: #2B2338;
   padding: 30px;
   border-radius: 15px;
   display: flex;
-  position: relative;
-  box-shadow: 5px 5px 20px rgba(229, 229, 229, 0.301);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #9B96B0;
 }
-.testimonial_box-icon {
-  margin-top: -12px;
-  padding-right: 20px;
+.testimonials .testimonial_box-icon {
+  padding: 10px 0;
 }
-.testimonial_box-icon i {
+.testimonials .testimonial_box-icon i {
   font-size: 25px;
-  color: #14213d;
+  color: #9B96B0;
 }
-.testimonial_box-text p {
-  color: #707070;
+.testimonials .testimonial_box-text {
+  padding: 10px 0;
+}
+.testimonials .testimonial_box-text p {
+  color: #ffffff;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 0;
 }
-.testimonial_box-shape {
-  position: absolute;
-  bottom: -10px;
-  left: 50px;
-  width: 20px;
-  height: 20px;
-  background-color: #e5e5e5;
-  transform: rotateZ(45deg);
-}
-.testimonial_box-bottom {
-  padding-top: 35px;
-  padding-left: 25px;
-}
-.testimonial_box-profile {
-  display: flex;
-}
-.testimonial_box-img {
+.testimonials .testimonial_box-img {
+  padding: 20px 0 10px;
   display: flex;
   justify-content: center;
 }
-.testimonial_box-img img {
+.testimonials .testimonial_box-img img {
   width: 70px;
   height: 70px;
   border-radius: 50px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #241A30;
 }
-.testimonial_box-info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 20px;
+.testimonials .testimonial_box-name {
+  padding-top: 10px;
 }
-.testimonial_box-name h4 {
+.testimonials .testimonial_box-name h4 {
   font-size: 20px;
   line-height: 25px;
-  color: #e5e5e5;
+  color: #9B96B0;
   margin-bottom: 0;
 }
-.testimonial_box-job p {
-  color: #e5e5e5;
+.testimonials .testimonial_box-job p {
+  color: #FF7FC2;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 20px;
   font-weight: 300;
   margin-bottom: 0;
-}
-
-.slick-dots li button:before {
-  font-size: 15px;
-  color: #e5e5e5;
 }/*# sourceMappingURL=style.css.map */
