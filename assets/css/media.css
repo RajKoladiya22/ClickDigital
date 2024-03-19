@@ -2,7 +2,11 @@
     .xxl-wrap{
         flex-wrap: wrap !important;
     }
-    
+    .WhatWeOffer{
+        .section-header{
+            width: 60% !important;
+        }
+    }
 }
 
 @media(max-width:1399px){
@@ -16,7 +20,11 @@
     .OurValue .OurValue-box .OurValue-box-right .vm-box {
         padding: 10px 25px !important;
     }
-    
+    .WhatWeOffer{
+        .section-header{
+            width: 60% !important;
+        }
+    }
 }
 
 @media(max-width:1199px) {
@@ -97,7 +105,11 @@
             margin: 0 !important;
         }
     }
-    
+    .WhatWeOffer{
+        .section-header{
+            width: 90% !important;
+        }
+    }
 }
 
 @media (max-width:575px) {
@@ -176,5 +188,9 @@
             margin: 0 !important;
         }
     }
-    
+    .WhatWeOffer{
+        .section-header{
+            width: 100% !important;
+        }
+    }
 }

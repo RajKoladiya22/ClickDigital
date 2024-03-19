@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./assets/css/remixicon.css">
     <link href="https://db.onlinewebfonts.com/c/7280a131e9f73efe49c55d60cf58ebd6?family=elementskit" rel="stylesheet">
 
+    <!-- ---Aenimetion--- -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+
     <!-- ---Media CSS--- -->
     <link rel="stylesheet" href="./assets/css/media.css">
 
@@ -29,6 +32,11 @@
 </head>
 
 <body>
+    <!-- ---cursor-start--- -->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- ---cursor-end--- -->
+
     <!-- --- Header-start --- -->
     <header>
         <div class="container">
@@ -283,7 +291,7 @@
         <div class="container">
             <div class="row">
                 <!-- <div class="col-xxl-12"> -->
-                <div class="section-header text-center">
+                <div class="section-header text-center m-auto">
                     <span>WHO WE ARE</span>
                     <h2>Where Strategy Meets Digital. Your Success Story Begins with Click Digital..</h2>
                 </div>
@@ -354,22 +362,73 @@
                             </div>
                         </div>
                     </div>
-                    
-                    </div>
+
+                </div>
             </div>
         </div>
     </section>
     <!-- ---What-We-Offer-end--- -->
     <section class="Experience">
         <div class="container">
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-xxl-12 experiance-content d-flex flex-wrap align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 sec">
+                        <div class="section-header text-left">
+                            <h2>Experience the magic of Interiokit. Contact us to discuss your project.</h2>
+                            <p>Maecenas massa inceptos placerat ultricies ridiculus vulputate torquent curae. Tortor
+                                cubilia risus nam cursus sit dui. Facilisi vivamus fermentum commodo nascetur orci morbi
+                                quisque ipsum suscipit vel. </p>
+                        </div>
+                        <div class="graph">
+                            <div class="progress-line">
+                                <ul type="none">
+                                    <li class="COACH">Design & Branding <span> 80% </span></li>
+                                </ul>
+                                <div class="barline wow  animate__animated animate__slideInLeft"></div>
+                            </div>
+                            <div class="progress-line">
+                                <ul type="none">
+                                    <li class="CONSULT">Web & App Developer <span> 88% </span></li>
+                                </ul>
+                                <div class="barline2 wow  animate__animated animate__slideInLeft"></div>
+                            </div>
+                            <div class="progress-line">
+                                <ul type="none">
+                                    <li class="SELF">Digital Marketing <span> 90% </span></li>
+                                </ul>
+                                <div class="barline3 wow  animate__animated animate__slideInLeft"></div>
+                            </div>
+                            <div class="progress-line">
+                                <ul type="none">
+                                    <li class="SELF">Social Media Manegement <span> 95% </span></li>
+                                </ul>
+                                <div class="barline4 wow  animate__animated animate__slideInLeft"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 experiance-img d-flex justify-content-center">
+                        <img src="./assets/img/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office.jpg" class="img-fluid"  alt="">
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
+        
 
 
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src=" ./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.7.1.js"></script>
     <script src="./assets/js/count_jquery.js"></script>
+    <script src="./assets/js/cursor.js"></script>
+    
+    
+    
+    
 </body>
 
 </html>

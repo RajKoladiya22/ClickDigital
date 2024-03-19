@@ -18,7 +18,35 @@ $fs-39: 39px;
 $fs-48: 48px;
 $fs-61: 61px;
 
+// ---cursor-start---
+#cursor {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999999999999999999;
+}
 
+#cursor-border {
+    --size: 50px;
+    position: fixed;
+    top: calc(var(--size) / -2);
+    left: calc(var(--size) / -2);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px white;
+    pointer-events: none;
+    transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+        height 0.15s ease-out, background-color 0.15s ease-out;
+    z-index: 9999999999999999999;
+}
+
+// ---cursor-end---
 @mixin btn {
     background-color: transparent;
     background-image: linear-gradient(120deg, $purple-color 20%, $primary-color 60%);
@@ -71,20 +99,25 @@ body {
     font-family: $Outfit;
 
     &::-webkit-scrollbar {
-        width: 10px; /* width of the scrollbar */
+        width: 10px;
+        /* width of the scrollbar */
     }
-    
+
     &::-webkit-scrollbar-track {
-        background: $bg-color; /* color of the track */
+        background: $bg-color;
+        /* color of the track */
     }
-    
+
     &::-webkit-scrollbar-thumb {
-        background: $secondary-color; /* color of the thumb */
-        border-radius: 5px; /* roundness of the thumb */
+        background: $secondary-color;
+        /* color of the thumb */
+        border-radius: 5px;
+        /* roundness of the thumb */
     }
-    
+
     &::-webkit-scrollbar-thumb:hover {
-        background: #555; /* color of the thumb on hover */
+        background: #555;
+        /* color of the thumb on hover */
     }
 }
 
@@ -497,6 +530,7 @@ header {
     background-color: transparent;
     background-image: linear-gradient(120deg, $purple-color 20%, $primary-color 60%);
     padding: 30px 0;
+    position: relative;
 
     .counter {
         ul {
@@ -516,12 +550,33 @@ header {
             }
         }
     }
+
+    &:before {
+        position: absolute;
+        content: '';
+        box-sizing: border-box;
+        width: 100%;
+        height: 300%;
+        bottom: -120%;
+        background-image: url('../img/bg__img3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
 }
 
 // --- Number-count-end---
 
 // ---What-We-Offer-start---
 .WhatWeOffer {
+    .section-header {
+
+        h2 {
+            padding: 25px 0;
+        }
+
+    }
+
     .offer-content {
         .offer-box {
             border: 1px solid $border-color;
@@ -577,7 +632,8 @@ header {
                     @include btn-hover();
                 }
             }
-            &:hover{
+
+            &:hover {
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
                 --border-block-start-width: 1px;
@@ -589,7 +645,7 @@ header {
                 box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.11);
             }
         }
-        
+
         .bx-m {
             margin: 10px 25px 10px 25px;
         }
@@ -597,3 +653,105 @@ header {
 }
 
 // ---What-We-Offer-end---
+.Experience {
+    background-image: url('../img//bg_pattern.png');
+    padding: 50px 0;
+    position: relative;
+    .experiance-content {
+        z-index: 1;
+        .sec{
+            // width: 90%; 
+            padding: 20px; 
+            .section-header {
+                p {
+                    color: $secondary-color;
+                    padding: 10px 0;
+                    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+    
+            .graph {
+                .progress-line {
+                    padding: 5px 0px;
+                    overflow: hidden;
+    
+                    ul {
+                        li {
+                            font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+                            color: #f3f2f5;
+                            font-weight: 500;
+                            padding: 20px 10px 5px 0;
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 5px solid #FFFFFF2B;
+                            border-bottom-right-radius: 5px;
+                            z-index: -1;
+                            position: relative;
+    
+                            span {
+                                color: #6D8386;
+                                background-color: $border-color ;
+                                border-radius: 5px;
+                                padding: 2px 4px;
+                            }
+                        }
+                    }
+                }
+    
+                .barline {
+                    border-bottom: 5px solid $purple-color !important;
+                    width: 80%;
+                    margin-top: -5px;
+                    border-bottom-right-radius: 10px;
+                }
+    
+                .barline2 {
+                    border-bottom: 5px solid $purple-color !important;
+                    width: 88%;
+                    left: 0;
+                    margin-top: -5px;
+                    border-bottom-right-radius: 10px;
+                }
+    
+                .barline3 {
+                    border-bottom: 5px solid $purple-color !important;
+                    width: 90%;
+                    left: 0;
+                    margin-top: -5px;
+                    border-bottom-right-radius: 10px;
+                }
+    
+                .barline4 {
+                    border-bottom: 5px solid $purple-color !important;
+                    width: 95%;
+                    left: 0;
+                    margin-top: -5px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+        
+
+        .experiance-img {
+            padding: 10px;
+            img{
+                border-radius: 30px 0 30px 0;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        --background-overlay: '';
+        background-color: transparent;
+        background-image: radial-gradient(at top left, #0F052080 0%, #18023ab4 55%);
+        // z-index: ;
+    }
+    }
+
+
