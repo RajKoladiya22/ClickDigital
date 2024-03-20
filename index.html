@@ -15,13 +15,13 @@
     <!-- ---Web Font Icon--- -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/remixicon.css">
-    <link href="https://db.onlinewebfonts.com/c/7280a131e9f73efe49c55d60cf58ebd6?family=elementskit" rel="stylesheet">
+    <!-- <link href="https://db.onlinewebfonts.com/c/7280a131e9f73efe49c55d60cf58ebd6?family=elementskit" rel="stylesheet"> -->
 
     <!-- ---Aenimetion--- -->
     <link rel="stylesheet" href="./assets/css/animate.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"> -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
 
     <!-- ---Media CSS--- -->
     <link rel="stylesheet" href="./assets/css/media.css">
@@ -36,7 +36,7 @@
 
 <body>
     <!-- ---cursor-start--- -->
-    <div class="">
+    <div class="d-xs-none">
         <div id="cursor"></div>
         <div id="cursor-border"></div>
     </div>
@@ -653,45 +653,12 @@
     <script>
         new WOW().init();
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src=" ./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.7.1.js"></script>
     <script src="./assets/js/count_jquery.js"></script>
     <script src="./assets/js/cursor.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.testimonial-slider').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                speed: 600,
-                draggable: true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: false,
-                responsive: [
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 575,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        }); 
-    </script>
-
-
+    <script src="./assets/js/slick.js"></script>
+   
 </body>
 
 </html>
