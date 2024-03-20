@@ -191,6 +191,7 @@ header {
                     font-weight: 600;
                     transition: 0.6s;
                 }
+
                 :hover {
                     color: $primary-color;
                 }
@@ -218,7 +219,8 @@ header {
             ul {
                 li {
                     padding: 12px;
-                    a{
+
+                    a {
                         font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
                     }
                 }
@@ -228,6 +230,7 @@ header {
                         @include btn;
                         padding: 7px 15px !important;
                         @include btn-hover();
+
                         i {
                             font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
                             color: #000000;
