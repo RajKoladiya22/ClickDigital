@@ -24,6 +24,11 @@
   z-index: 10000000000000000000;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 h1,
 h2,
 h3,
@@ -717,9 +722,11 @@ header .offcanvas-body nav ul .wp-btn button:hover {
 }
 .testimonials .testimonial_box-text p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
   line-height: 20px;
   margin-bottom: 0;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .testimonials .testimonial_box-img {
   padding: 20px 0 10px;
@@ -749,4 +756,141 @@ header .offcanvas-body nav ul .wp-btn button:hover {
   line-height: 20px;
   font-weight: 300;
   margin-bottom: 0;
+}
+
+footer .foot {
+  border-top: 1px solid #241A30;
+  border-bottom: 1px solid #241A30;
+  padding: 32px 0;
+}
+footer .foot .foot-left p {
+  width: 80%;
+  color: #9B96B0;
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  padding: 15px 0;
+}
+footer .foot .foot-left .wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+footer .foot .foot-left .wrapper .icon {
+  color: #000000;
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .foot .foot-left .wrapper .icon a i {
+  color: #000000;
+}
+footer .foot .foot-left .wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: calc(10px + 3 * (100vw - 320px) / 1600);
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .foot .foot-left .wrapper .icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .foot .foot-left .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+footer .foot .foot-left .wrapper .icon:hover span,
+footer .foot .foot-left .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+footer .foot .foot-left .wrapper .icon.facebook:hover, footer .foot .foot-left .wrapper .icon.facebook:hover, footer .foot .foot-left .wrapper .icon.facebook:hover .tooltip, footer .foot .foot-left .wrapper .icon.facebook:hover .tooltip::before {
+  background: #1877F2;
+}
+footer .foot .foot-left .wrapper .icon.facebook:hover i {
+  color: #ffffff;
+}
+footer .foot .foot-left .wrapper .icon.twitter:hover, footer .foot .foot-left .wrapper .icon.twitter:hover, footer .foot .foot-left .wrapper .icon.twitter:hover .tooltip, footer .foot .foot-left .wrapper .icon.twitter:hover .tooltip::before {
+  background: #1DA1F2;
+}
+footer .foot .foot-left .wrapper .icon.twitter:hover i {
+  color: #ffffff;
+}
+footer .foot .foot-left .wrapper .icon.instagram:hover, footer .foot .foot-left .wrapper .icon.instagram:hover, footer .foot .foot-left .wrapper .icon.instagram:hover .tooltip, footer .foot .foot-left .wrapper .icon.instagram:hover .tooltip::before {
+  background: #E4405F;
+}
+footer .foot .foot-left .wrapper .icon.instagram:hover i {
+  color: #ffffff;
+}
+footer .foot .foot-left .wrapper .icon.whatsapp:hover, footer .foot .foot-left .wrapper .icon.whatsapp:hover, footer .foot .foot-left .wrapper .icon.whatsapp:hover .tooltip, footer .foot .foot-left .wrapper .icon.whatsapp:hover .tooltip::before {
+  background: #25D366;
+}
+footer .foot .foot-left .wrapper .icon.whatsapp:hover i {
+  color: #ffffff;
+}
+footer .foot .foot-left .wrapper .icon.youtube:hover, footer .foot .foot-left .wrapper .icon.youtube:hover, footer .foot .foot-left .wrapper .icon.youtube:hover .tooltip, footer .foot .foot-left .wrapper .icon.youtube:hover .tooltip::before {
+  background: #CD201F;
+}
+footer .foot .foot-left .wrapper .icon.youtube:hover i {
+  color: #ffffff;
+}
+footer .foot .foot-right h6 {
+  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+  padding-bottom: calc(7px + 8 * (100vw - 320px) / 1600);
+  padding-top: calc(10px + -10 * (100vw - 320px) / 1600);
+}
+footer .foot .foot-right ul li a {
+  font-size: calc(12px + 2 * (100vw - 320px) / 1600);
+  color: #9B96B0;
+  transition: 0.7s;
+}
+footer .foot .foot-right ul li a:hover {
+  color: #FF7FC2;
+}
+
+.footer-aside {
+  padding-top: calc(14px + 18 * (100vw - 320px) / 1600);
+  padding-bottom: calc(14px + 18 * (100vw - 320px) / 1600);
+}
+.footer-aside p {
+  color: #9B96B0;
+  font-size: calc(11px + 2 * (100vw - 320px) / 1600);
+}
+.footer-aside p a {
+  color: rgba(245, 245, 245, 0.698);
+}
+.footer-aside ul li {
+  padding: 0 5px;
+}
+.footer-aside ul li a {
+  color: #9B96B0;
+  font-size: calc(11px + 2 * (100vw - 320px) / 1600);
+  transition: 0.7s;
+}
+.footer-aside ul li a:hover {
+  color: #FF7FC2;
 }/*# sourceMappingURL=style.css.map */
