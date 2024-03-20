@@ -98,6 +98,42 @@ body::-webkit-scrollbar-thumb:hover {
   color: #9B96B0;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #241A30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s, transform 1s; /* Smooth transition */
+}
+
+.loader.hidden {
+  opacity: 0; /* Fade out when hidden */
+  transform: translateY(-100%); /* Slide up animation */
+}
+
+.loader-image {
+  width: 500px;
+  height: auto;
+}
+
+/* Hide content initially */
+.content {
+  display: none;
+  opacity: 0; /* Initial opacity */
+}
+
+/* Show content after loader finishes */
+.content.visible {
+  display: block;
+  opacity: 1; /* Fade in when visible */
+  transition: opacity 2s; /* Smooth fade-in transition */
+}
+
 header {
   position: sticky;
   top: 0;
