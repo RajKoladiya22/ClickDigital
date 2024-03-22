@@ -108,12 +108,13 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s, transform 1s; /* Smooth transition */
+  transition: opacity 1s, transform 1s;
 }
 
 .loader.hidden {
   opacity: 0; /* Fade out when hidden */
-  transform: translateY(-100%); /* Slide up animation */
+  transform: translateY(-100%);
+  z-index: 1;
 }
 
 .loader-image {
